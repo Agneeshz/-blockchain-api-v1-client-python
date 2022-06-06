@@ -12,8 +12,6 @@ class TestGetAddress(unittest.TestCase):
         self.assertLessEqual(0, address.total_sent)
         self.assertEqual(address.n_tx, len(address.transactions))
 
-        oksdadaduwhfuwhfiw
-
     def test_getAddressByHash160(self):
         address = get_address('07feead7f9fb7d16a0251421ac9fa090169cc169')
         self.assertEqual('1jH7K4RJrQBXijtLj1JpzqPRhR7MdFtaW', address.address)
